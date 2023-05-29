@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>VIM论坛————狂人日记</title>
+	<link rel="icon" href="../images/VIM.ico">
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/community.css">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+	<!-- ························································页眉部分························································ -->
+    <div class="header">
+        <!-- 快捷导航 -->
+        <div class="h-nav">
+            <div class="h-nav-p">
+                <p>收藏夹栏：</p>
+            </div>
+            <div class="h-nav-a">
+                <ul>
+                    <li><a href="https://github.com/" target="_blank">Github</a></li>
+                    <li><a href="https://www.aliyun.com/" target="_blank">Aliyun</a></li>
+                    <li><a href="https://www.bilibili.com/" target="_blank">BiliBili</a></li>
+                    <li><a href="https://cn.bing.com/search?q=%E7%BF%BB%E8%AF%91&form=ANNTH1&refig=7c257f9b038f47bdbaf09f616d5fa122&sp=1&qs=HS&pq=%E7%BF%BB%E8%AF%91&sc=10-2&cvid=7c257f9b038f47bdbaf09f616d5fa122"
+                            target="_blank">Translation</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="h-login">
+                <a href="#">登录\注册</a>
+            </div>
+        </div>
+        <!-- 公告框 -->
+        <div class="h-slide">
+            <ul>
+                <li>
+                    <a class="h-slide-a" href="#">点我展开公告</a>
+                    <div class="h-text">
+                        <ul>
+                            <li>✬ <a href="#">增加主页导航栏的详细内容；增加了多个分页面，并实现来回切换。</a></li>
+                            <li>✬ <a href="#">调整了分页面的结构；增加分页面的可视内容。</a></li>
+                            <li>✬ <a href="#">性能优化：调整了系统整体代码，使其更加整洁；对网站图片进行压缩处理；更换系统模型材质并对系统的模型进行重新渲染。</a></li>
+                            <li>✬ <a href="#">优化了滑动门的弹出框的内容显示；增加了页面顶部元素。</a></li>
+                            <li>✬ <a href="#">解决了移动端的兼容问题；优化了顶部时间显示形式；修复了搜索按钮点击无反应的bug；更改了404页面显示的样式</a></li>
+                            <li>✬ <a href="#">为了更好的测试与展示页面，于5月29日删除除404页面之外的所有分页面，并重新定义网址为vim666（其它网址不受影响）。</a></li>
+                            <li>✬ <a href="#">对于单主页，为了更贴合大众化化，调整主页部分文字与部分图片。</a></li>
+                            <li>✬ <a href="#">修改了横幅展示样式，增加了三种动态效果</a></li>
+                            <li>✬ <a href="#">扩展了VIM精选模块的可视化内容。</a></li>
+                            <li>✬ <a href="#">增加顶部登录与注册功能</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <!-- 搜索框 -->
+        <div class="search">
+            <div class="h-vrap">
+                <input type="text" placeholder="点击搜索一下喜欢的内容吧" id="in">
+                <a id="bt" href="#">
+                    <i class="fa fa-hand-o-right"></i>
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+        </div>
+        <script src="../js/search.js"></script>
+        <!-- 广告图片 -->
+        <div>
+            <a href="#">
+                <img src="../images/ad.jpg" alt=""></a>
+        </div>
+        <!-- 数字时钟 -->
+        <div class="header-R">
+            <div id="clock">
+                <p class="date">{{ date }}</p>
+                <p class="time">{{ time }}</p>
+            </div>
+            <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/vue/2.4.0/vue.min.js"></script>
+            <script type="application/javascript" src="../js/clock.js"></script>
+            <!-- logo图片 -->
+            <img src="../images/logo.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- ························································黑色导航························································ -->
+    <div class="black-nav">
+        <div class="wrap">
+            <ul class="black-nav-left-right">
+                <li class="cart"><a href="#">✉ 消息</a>
+                    <div class="game">
+                        <p><a href="https://mail.qq.com/" target="_blank">E-mail</a></p>
+                    </div>
+                </li>
+                <li class="cart"><a href="#zonghe">☬ 综合内容</a>
+                    <div class="game">
+                        <p><a href="#">Content</a>
+                        </p>
+                    </div>
+                </li>
+                <li class="cart"><a href="#fabu">♝ VIM商城</a>
+                    <div class="game">
+                        <p><a href="../page/shopping.html">Model</a></p>
+                    </div>
+                </li>
+
+                <li class="cart"><a href="#luntan">♜ VIM论坛</a>
+                    <div class="game">
+                        <p><a href="../page/community.html">Forum</a></p>
+                    </div>
+                </li>
+
+                <li class="cart"><a href="#jingxuan">✎ VIM精选</a>
+                    <div class="game">
+                        <p><a href="#">Featured</a>
+                        </p>
+                    </div>
+                </li>
+
+                <li class="cart"><a href="#ziliao">☊ VIM收藏</a>
+                    <div class="game">
+                        <p><a href="#">Banner</a></p>
+                    </div>
+                </li>
+                
+                <li class="cart"><a href="#">♞ 学习资料</a>
+                    <div class="game">
+                        <p><a href="https://www.bilibili.com/" target="_blank">bilibili</a></p>
+                    </div>
+                </li>
+
+                
+
+                <li class="cart"><a href="../index.html">♚ VIM首页</a>
+                    <div class="game">
+                        <p><a href="../index.html">Official</a>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="b1">
+            <div class="b1-p1">
+                <p>欢迎来到VIM官方首页!</p>
+                <p>
+                    <span class="word alizarin">本系统首页仅是做功能展示所用，望谅解。</span>
+                    <span class="word wisteria">本系统仅供学习使用,请勿商用,谢谢！</span>
+                </p>
+            </div>
+        </div>
+        <script type="application/javascript" src="../js/textflow.js"></script>
+    </div>
+	<!-- ························································中间部分························································ -->
+	<div class="middle-1">
+		<div class="crumb">
+			<p>VIM论坛定位：</p>
+			<p> <a href="../index.html">VIM首页<span>➽</span></a></p>
+			<p><a href="./community.html">VIM论坛首页<span>➽</span></a></p>
+			<p>正在浏览“狂人日记”</p>
+		</div>
+
+		<div class="Content">
+
+			<div class="top_nav">
+				<a class="as">论坛首页</a>
+				<a href="./new1.html">日常随发</a>
+				<a href="./new2.html">鸡汤来喽</a>
+				<a href="./new3.html">狂人日记</a>
+				<a href="./new4.html">涨涨姿势</a>
+			</div>
+
+			<div class="news_list">
+				<ul class="list">
+					<li>
+						<a href="./community.html">
+							<div class="imgst">
+								<img src="../images/3new-1.jpg" alt="">
+							</div>
+							<div class="bt">我的第一天</div>
+							<p>根据自己设计出来的模板进行程序可视化操作······</p>
+							<div class="item">
+								<span class="time"><i></i>2023年05月19日 23:59:59</span>
+							</div>
+						</a>
+					</li>
+
+					<li>
+						<a href="./community.html">
+							<div class="imgst">
+								<img src="../images/3new-1.jpg" alt="">
+							</div>
+							<div class="bt">我的第二天</div>
+							<p>新增了主页的导航栏的详细专栏······</p>
+							<div class="item">
+								<span class="time"><i></i>2023年05月20日 23:59:59</span>
+							</div>
+						</a>
+					</li>
+
+					<li>
+						<a href="./community.html">
+							<div class="imgst">
+								<img src="../images/3new-1.jpg" alt="">
+							</div>
+							<div class="bt">我的第三天</div>
+							<p>在详细专栏构建完成后，又构建出了基于主页的分页面······</p>
+							<div class="item">
+								<span class="time"><i></i>2023年05月21日 23:59:59</span>
+							</div>
+						</a>
+					</li>
+
+					<li>
+						<a href="./community.html">
+							<div class="imgst">
+								<img src="../images/3new-1.jpg" alt="">
+							</div>
+							<div class="bt">我的第四天</div>
+							<p>优化了主页可视化元素······</p>
+							<div class="item">
+								<span class="time"><i></i>2023年05月22日 23:59:59</span>
+							</div>
+						</a>
+					</li>
+
+					<li>
+						<a href="./community.html">
+							<div class="imgst">
+								<img src="../images/3new-1.jpg" alt="">
+							</div>
+							<div class="bt">我的第五天</div>
+							<p>增加主页更多的效果······</p>
+							<div class="item">
+								<span class="time"><i></i>2023年05月23日 23:59:59</span>
+							</div>
+						</a>
+					</li>
+
+					<li>
+						<a href="./community.html">
+							<div class="imgst">
+								<img src="../images/3new-1.jpg" alt="">
+							</div>
+							<div class="bt">我的第六天</div>
+							<p>优化了分页可视化元素······</p>
+							<div class="item">
+								<span class="time"><i></i>2023年05月24日 23:59:59</span>
+							</div>
+						</a>
+					</li>
+
+					<li>
+						<a href="./community.html">
+							<div class="imgst">
+								<img src="../images/3new-1.jpg" alt="">
+							</div>
+							<div class="bt">我的第七天</div>
+							<p>优化所有页面的性能，包括压缩图片大小，代码优化等······</p>
+							<div class="item">
+								<span class="time"><i></i>2023年05月25日 23:59:59</span>
+							</div>
+						</a>
+					</li>
+
+					<li>
+						<a href="./community.html">
+							<div class="imgst">
+								<img src="../images/3new-8.jpg" alt="">
+							</div>
+							<div class="bt">我的第八天</div>
+							<p>对分页面上的部分模型与模型渲染图片进行美化：<br>
+								1.用Blender更改模型材质，使其整体偏于金属风格，更贴合模型；<br>
+								2.调整参数后进行渲染，最后利用PS进行整合与美化）······<br>
+								待调整：模型边缘平滑度
+							</p>
+							<div class="item">
+								<span class="time"><i></i>2023年05月26日 23:59:59</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="pagewrap">
+				<ul class="pagination">
+					<li class="first disabled"><span>首页</span></li>
+					<li class="prev disabled"><span>«</span></li>
+					<li class="active"><a href="./community.html#" data-page="0">1</a></li>
+					<li><a href="./community.html" data-page="1">2</a></li>
+					<li><a href="./community.html#" data-page="2">3</a></li>
+					<li><a href="./community.html#" data-page="3">4</a></li>
+					<li><a href="./community.html#" data-page="4">5</a></li>
+					<li><a href="./community.html#" data-page="5">6</a></li>
+					<li><a href="./community.html#" data-page="6">7</a></li>
+					<li><a href="./community.html#" data-page="7">8</a></li>
+					<li class="next"><a href="./community.html#" data-page="1">»</a></li>
+					<li class="last"><a href="./community.html#" data-page="293">末页</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- ························································页脚部分························································ -->
+	<div class="footer-bottom">
+		<div class="footer-bottom-mid">
+			<p><a href="#">关于VIM网站</a>|<a href="#">客服中心</a>|<a href="#">售后服务</a>|<a href="#">相关政策</a>|<a
+					href="#">意见反馈</a>|<a href="#">免责声明</a>|<a href="#">家长监护</a>|<a href="#">青少年模式</a></p>
+			<p> <a href="#">
+					<span style="color:#939393;">X公网安备 XXXXXXXXXXXXXXX号</span>
+				</a>VIM网站不良信息举报地址：xxxxxxxxx@foxmail.com</p>
+			<p>Copyright © 2023 - 3023.Personal vimmin All Right Reserved</p>
+		</div>
+	</div>
+</body>
+
+</html>

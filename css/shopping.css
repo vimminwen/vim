@@ -1,0 +1,357 @@
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.shopping-top {
+    width: 1200px;
+    height: 730px;
+    /* 弹性布局 水平+垂直居中 */
+    display: flex;
+    justify-content: left;
+    /* 背景渐变色 */
+	background: linear-gradient(#fa8c6b, #1dbea9);
+    margin: 0 auto;
+    position: relative;
+    top: -60px;
+}
+
+/* ························································左侧样式························································ */
+.shopping-L {
+    width: 336px;
+    height: 730px;
+}
+
+.shopping-L ul {
+    list-style: none;
+    /* 相对定位 */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* 弹性布局 */
+    display: flex;
+    /* 让子元素平均分配宽度 */
+    justify-content: space-around;
+    /* 让子元素在交叉轴（Y轴）的最下方排列 */
+    align-items: flex-end;
+}
+
+.shopping-L ul li {
+    width: 80px;
+    cursor: pointer;
+}
+
+/* 小图 */
+.shopping-L ul li img {
+    width: 72px;
+    height: 100px;
+    margin-left: 4px;
+    /* 加个透明边框，让图片看起来有距离 */
+    border: 2px solid #EB4E18;
+}
+
+/* 大图 */
+.shopping-L ul .big-img {
+    /* 绝对定位 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 336px;
+    height: 600px;
+    /* 背景图片 不平铺 */
+    background: url("../images/f2-1.jpg") no-repeat;
+    /* 对图片进行剪切，保留原始比例 */
+    background-size: cover;
+    /* 图片定位正中间 */
+    background-position: center;
+    /* 和小图片一样的透明边框，为了对齐 */
+    border: 2px solid #EB4E18;
+    /* 动画过渡 */
+    transition: 0.5s;
+}
+
+/* 移动框 */
+.shopping-L ul .frame {
+    position: absolute;
+    left: 5px;
+    bottom: 4px;
+    width: 72px;
+    height: 100px;
+    border: 2px solid #fff;
+    /* 这里有一个bug（闪烁） */
+    /* 加这个属性可以让移动框不会被鼠标捕捉到（解决闪烁这个bug） */
+    pointer-events: none;
+    /* 加个动画过渡 */
+    transition: 0.5s;
+}
+
+/* 鼠标移入小图，改变大图 */
+.shopping-L ul li:nth-child(1):hover~.big-img {
+    background-image: url("../images/f2-1.jpg");
+}
+
+.shopping-L ul li:nth-child(2):hover~.big-img {
+    background-image: url("../images/f2-2.jpg");
+}
+
+.shopping-L ul li:nth-child(3):hover~.big-img {
+    background-image: url("../images/f2-3.jpg");
+}
+
+.shopping-L ul li:nth-child(4):hover~.big-img {
+    background-image: url("../images/f2-4.jpg");
+}
+
+/* 鼠标移入小图，改变移动框的位置 */
+.shopping-L ul li:nth-child(1):hover~.frame {
+    left: 5px;
+}
+
+.shopping-L ul li:nth-child(2):hover~.frame {
+    left: 87px;
+}
+
+.shopping-L ul li:nth-child(3):hover~.frame {
+    left: 169px;
+}
+
+.shopping-L ul li:nth-child(4):hover~.frame {
+    left: 250px;
+}
+
+/* ························································右侧样式························································ */
+.shopping-R {
+    width: 834px;
+    margin-left: 60px;
+}
+
+.shopping-R h1 {
+    margin-top: 20px;
+}
+
+.shopping-R p {
+    font-size: 20px;
+    font-weight: 550;
+    margin: 25px 0;
+}
+
+.shopping-R p span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #161616;
+}
+
+.shopping-R p strong {
+    font-size: 33px;
+    color: #22f133;
+}
+
+.shopping-R p a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.shopping-R .Price {
+    font-size: 35px;
+    float: left;
+    margin-top: -60px;
+    margin-left: 100px;
+}
+
+.shopping-R .Price .jiage {
+    font-size: 17px;
+    padding-left: 10px;
+    text-decoration: line-through;
+}
+
+.shopping-R button {
+    font-size: 33px;
+    margin-left: 90px;
+    padding: 5px 50px;
+    background-color: aquamarine;
+    border-radius: 25px;
+}
+
+.shopping-R a:hover {
+    color: #EB4E18;
+}
+
+.shopping-R button:hover {
+    color: #EB4E18;
+    background-color: #77f882;
+}
+
+.shopping-R .tip {
+    color: #222222;
+    margin-top: 5px;
+    font-size: 14px;
+    margin-left: 0;
+}
+
+.shopping-R .shopping-R-foot a {
+    text-decoration: none;
+    color: #000;
+    float: right;
+    font-size: 20px;
+    font-weight: 550;
+    margin: 0 10px;
+    padding: 0 25px;
+    background-color: #f79574;
+    border-radius: 25px;
+}
+
+.shopping-R .shopping-R-foot a:hover {
+    color: #EB4E18;
+}
+
+.shopping-R .shopping-R-foot .dianzan {
+    float: left;
+    padding-left: 20px;
+}
+
+.shopping-R .shopping-R-foot .dianzan:hover {
+    color: #EB4E18;
+}
+
+/* ························································底部样式························································ */
+.shopping-down {
+    width: 1200px;
+    height: 1600px;
+    /* 弹性布局 水平+垂直居中 */
+    display: flex;
+    justify-content: left;
+    /* 背景渐变色 */
+	background: linear-gradient(#fa8c6b, #1dbea9);
+    margin: 0 auto;
+    position: relative;
+    top: -10px;
+}
+
+.shopping-down .shopping-down-L {
+    width: 350px;
+    overflow: hidden;
+    border: 1px solid #000;
+}
+
+.shopping-down .shopping-down-L .shopping-down-L-1 h3 {
+    margin: 10px 5px;
+}
+
+.shopping-down .shopping-down-L .shopping-down-L-1 li {
+    line-height: 33px;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.shopping-down .shopping-down-L h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.shopping-down .shopping-down-L .shopping-down-L-2 li {
+    display: inline-block;
+}
+
+.shopping-down .shopping-down-L .shopping-down-L-2 img {
+    width: 100px;
+    height: 160px;
+    margin: 10px 6px;
+    border: 1px solid #000;
+    /* 盒子模型 改变盒子宽高的计算方式 */
+    box-sizing: border-box;
+}
+
+.shopping-down .shopping-down-L .shopping-down-L-2 img:hover {
+    border: 1px solid #EB4E18;
+    transform: scale(1.01);
+}
+
+.shopping-down .shopping-down-L .shopping-down-L-3 img {
+    width: 330px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 25px;
+}
+
+.shopping-down .shopping-down-L .shopping-down-L-3 img:hover {
+    transform: scale(1.01);
+}
+
+.shopping-down .shopping-down-R {
+    width: 780px;
+    margin-left: 50px;
+    overflow: hidden;
+}
+
+.shopping-down .shopping-down-R p {
+    font-size: 20px;
+    text-indent: 40px;
+    text-align: justify;
+    padding: 10px 0;
+    line-height: 30px;
+}
+
+.shopping-down .shopping-down-R h2 {
+    margin: 10px 0;
+}
+
+.shopping-down .shopping-down-R img {
+    width: 780px;
+    height: 1377px;
+    border: 1px solid #000;
+    /* 盒子模型 改变盒子宽高的计算方式 */
+    box-sizing: border-box;
+}
+
+.shopping-down .shopping-down-L .shopping-down-L-4 h4 {
+    margin: 10px 5px
+}
+
+.shopping-down .shopping-down-L .shopping-down-L-4 p {
+    font-size: 16px;
+    line-height: 30px;
+    text-indent: 33px;
+    margin: 0 5px;
+    text-align: justify;
+}
+
+/* ························································底部样式························································ */
+.footer-bottom {
+    background-color: rgb(63, 63, 63);
+    width: 100%;
+    height: 130px;
+    position: relative;
+    top: 10px;
+}
+
+.footer-bottom .footer-bottom-mid {
+    width: 1200px;
+    height: 130px;
+    margin: auto auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.footer-bottom .footer-bottom-mid p {
+    margin-top: 10px;
+    text-align: center;
+    line-height: 30px;
+    color: #9c9c9c;
+}
+
+.footer-bottom .footer-bottom-mid p a {
+    text-decoration: none;
+    margin-right: 8px;
+    margin-left: 8px;
+    color: #9c9c9c;
+}
+
+.footer-bottom .footer-bottom-mid p a:hover {
+    color: #fff;
+}
