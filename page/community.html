@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>VIM论坛————首页</title>
+	<link rel="icon" href="../images/VIM.ico">
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/community.css">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="../font/login/iconfont.css">
+	<link rel="stylesheet" href="../font/slide/iconfont.css">
+</head>
+
+<body>
+	<!-- ························································页眉部分························································ -->
+    <div class="header" id="home">
+        <!-- 快捷导航 -->
+        <div class="h-nav">
+            <div class="h-nav-p">
+                <p>收藏夹栏：</p>
+            </div>
+            <div class="h-nav-a">
+                <ul>
+                    <li><a href="https://github.com/" target="_blank">Github</a></li>
+                    <li><a href="https://www.aliyun.com/" target="_blank">Aliyun</a></li>
+                    <li><a href="https://www.bilibili.com/" target="_blank">BiliBili</a></li>
+                    <li><a href="https://cn.bing.com/search?q=%E7%BF%BB%E8%AF%91&form=ANNTH1&refig=7c257f9b038f47bdbaf09f616d5fa122&sp=1&qs=HS&pq=%E7%BF%BB%E8%AF%91&sc=10-2&cvid=7c257f9b038f47bdbaf09f616d5fa122"
+                            target="_blank">Translation</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="h-login">
+                <ul>
+                    <li><a href="#" class="iconfont">登录：&#xe619; VIM</a></li>
+                    <li><a href="#" class="iconfont">&#xe64f; 微信</a></li>
+                    <li><a href="#" class="iconfont">&#xe64e; QQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 公告框 -->
+        <div class="h-slide">
+            <ul>
+                <li>
+                    <a class="h-slide-a" href="#">点我展开公告</a>
+                    <div class="h-text">
+                        <ul>
+                            <li>✬ <a href="#">增加主页导航栏的详细内容；增加了多个分页面，并实现来回切换。</a></li>
+                            <li>✬ <a href="#">调整了分页面的结构；增加分页面的可视内容。</a></li>
+                            <li>✬ <a href="#">性能优化：调整了系统整体代码，使其更加整洁；对网站图片进行压缩处理；更换系统模型材质并对系统的模型进行重新渲染。</a></li>
+                            <li>✬ <a href="#">优化了滑动门的弹出框的内容显示；增加了页面顶部元素。</a></li>
+                            <li>✬ <a href="#">解决了移动端的兼容问题；优化了顶部时间显示形式；修复了搜索按钮点击无反应的bug；更改了404页面显示的样式</a></li>
+                            <li>✬ <a href="#">为了更好的测试与展示页面，于5月29日删除除404页面之外的所有分页面，并重新定义网址为vim666（其它网址不受影响）。</a></li>
+                            <li>✬ <a href="#">对于单主页，为了更贴合大众化化，调整主页部分文字与部分图片。</a></li>
+                            <li>✬ <a href="#">修改了横幅展示样式，增加了三种动态效果</a></li>
+                            <li>✬ <a href="#">扩展了VIM精选模块的可视化内容。</a></li>
+                            <li>✬ <a href="#">增加顶部登录与注册功能</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <!-- 搜索框 -->
+        <div class="search">
+            <div class="h-vrap">
+                <input type="text" placeholder="点击搜索一下喜欢的内容吧" id="in">
+                <a id="bt" href="#">
+                    <i class="fa fa-hand-o-right"></i>
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+        </div>
+        <script src="../js/search.js"></script>
+        <!-- 广告图片 -->
+        <div class="h-ad">
+            <a href="#">
+                <img src="../images/ad.jpg" alt=""></a>
+        </div>
+        <!-- 数字时钟 -->
+        <div class="header-R">
+            <div id="clock">
+                <p class="date">{{ date }}</p>
+                <p class="time">{{ time }}</p>
+            </div>
+            <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/vue/2.4.0/vue.min.js"></script>
+            <script type="application/javascript" src="../js/clock.js"></script>
+            <!-- logo图片 -->
+            <div class="h-logo">
+                <img src="../images/logo.jpg" alt="">
+            </div>
+        </div>
+        <!-- 黑色导航 -->
+        <div class="black-nav">
+            <div class="wrap">
+                <ul class="black-nav-left-right">
+                    <li class="cart"><a href="#">✉ 消息</a>
+                        <div class="game">
+                            <p><a href="https://mail.qq.com/" target="_blank">E-mail</a></p>
+                        </div>
+                    </li>
+                    <li class="cart"><a href="../index.html">☬ 综合内容</a>
+                        <div class="game">
+                            <p><a href="#">Content</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cart"><a href="../page/shopping.html">♝ VIM商城</a>
+                        <div class="game">
+                            <p><a href="../page/shopping.html">Model</a></p>
+                        </div>
+                    </li>
+
+                    <li class="cart"><a href="../page/community.html">♜ VIM论坛</a>
+                        <div class="game">
+                            <p><a href="../page/community.html">Forum</a></p>
+                        </div>
+                    </li>
+
+                    <li class="cart"><a href="../index.html">✎ VIM精选</a>
+                        <div class="game">
+                            <p><a href="#">Featured</a>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="cart"><a href="../index.html">☊ VIM收藏</a>
+                        <div class="game">
+                            <p><a href="#">Banner</a></p>
+                        </div>
+                    </li>
+
+                    <li class="cart"><a href="#">♞ 学习资料</a>
+                        <div class="game">
+                            <p><a href="https://www.bilibili.com/" target="_blank">bilibili</a></p>
+                        </div>
+                    </li>
+                    <li class="cart"><a href="../index.html">♚ VIM首页</a>
+                        <div class="game">
+                            <p><a href="../index.html">Official</a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="b1">
+                <div class="b1-p1">
+                    <p>欢迎来到VIM官方论坛!</p>
+                    <p>
+                        <span class="word alizarin">本系统首页仅是做功能展示所用，望谅解。</span>
+                        <span class="word wisteria">本系统仅供学习使用,请勿商用,谢谢！</span>
+                    </p>
+                </div>
+            </div>
+            <script type="application/javascript" src="../js/textflow.js"></script>
+        </div>
+    </div>
+    <!-- ························································侧边固定部分·················································· -->
+    <div class="fixed-slide">
+        <ul>
+            <li><a href="https://github.com/" target="_blank" class="iconfont">&#xe708;</a></li>
+            <li><a href="https://cn.bing.com/search?q=%E7%BF%BB%E8%AF%91&form=ANNTH1&refig=7c257f9b038f47bdbaf09f616d5fa122&sp=1&qs=HS&pq=%E7%BF%BB%E8%AF%91&sc=10-2&cvid=7c257f9b038f47bdbaf09f616d5fa122"
+                    target="_blank" class="iconfont">&#xe707;</a></li>
+            <li><a href="https://www.bilibili.com/" target="_blank" class="iconfont">&#xe709;</a></li>
+            <li><a href="#" class="iconfont">&#xe705;</a></li>
+            <li><a href="#home" class="iconfont">&#xe706;</a></li>
+        </ul>
+    </div>
+    <!-- ························································全屏广告背景························································ -->
+    <div class="all-ad">
+        <img src="../images/slide.jpg" alt="">
+    </div>
+	<!-- ························································中间部分························································ -->
+	<div class="middle-1">
+		<div class="crumb">
+			<p>VIM论坛定位：</p>
+			<p> <a href="../index.html">VIM首页<span>➽</span></a></p>
+			<p><a href="./community.html">VIM论坛首页<span>➽</span></a></p>
+			<p>正在浏览“论坛首页”</p>
+		</div>
+
+		<div class="Content">
+
+			<div class="top_nav">
+				<a class="as">论坛首页</a>
+				<a href="./new1.html">日常随发</a>
+				<a href="./new2.html">鸡汤来喽</a>
+				<a href="./new3.html">狂人日记</a>
+				<a href="./new4.html">涨涨姿势</a>
+			</div>
+
+			<div class="news_list">
+				<ul class="list">
+					<li>
+						<a href="https://baike.baidu.com/item/%E5%88%BA%E5%AE%A2%E4%BF%A1%E6%9D%A1/85070">
+							<div class="imgst">
+								<img src="../images/0new-1.jpg" alt="">
+							</div>
+							<div class="bt">刺客信条</div>
+							<p>《刺客信条》是由育碧蒙特利尔工作室研发的动作冒险类游戏系列，于2007年发行第一部，游戏平台为PS3、PC和PSP等。该游戏系列是以超高的自由度和精美的画面作为最大卖点的动作类游戏。
+								玩家将在每部游戏中控制一名刺客，通过在任务中巧妙穿插重要的历史人物及历史事件带给玩家深沉的代入感。2022年7月2日，育碧宣布于 9 月 1 日停用部分旧游戏的在线服务器，
+								甚至 PC 上的某些游戏 DLC 不再可用。关闭意味着玩家无法在多款《刺客信条》（包括《刺客信条 2》、《刺客信条 3》、《刺客信条：兄弟会》、《刺客信条：解放
+								HD》、《刺客信条：启示录》）
+								《孤岛惊魂 3》、《细胞分裂 6：黑名单》、《狂飙：旧金山》和《波斯王子 5：遗忘之沙》玩多人游戏。重制版游戏不受影响。 2022年9月，《刺客信条》全系列销量突破2亿份。
+								12月17日消息，《刺客信条：代号 JADE》游戏画面在网上传出。</p>
+							<div class="item">
+								<span class="time"><i></i>2023年01月01日 00:00:00</span>
+							</div>
+						</a>
+					</li>
+
+					<li>
+						<a href="https://baike.sogou.com/v2220154.htm?fromTitle=gta5">
+							<div class="imgst">
+								<img src="../images/0new-2.jpg" alt="">
+							</div>
+							<div class="bt">侠盗猎车手5</div>
+							<p>《侠盗猎车手5》（Grand Theft Auto V，GTA5）是由Rockstar Games制作的一款开放世界动作冒险游戏，并于2013年9月17日发行。
+								《侠盗猎车手5》的游戏背景设定在虚构的美国圣安地列斯州（San Andreas，以南加州为范本），玩家以第三人称、第一人称游玩，
+								可自由的与游戏世界互动，随意地在荒漠间和虚构的城市洛圣都（Los Santos，以洛杉矶为范本）中漫游。该游戏内容存在暴力血腥、
+								教唆犯罪等违法内容，不适合未成年接触。
+							</p>
+							<div class="item">
+								<span class="time"><i></i>2023年02月01日 00:00:00</span>
+							</div>
+						</a>
+					</li>
+
+					<li>
+						<a
+							href="https://baike.baidu.com/item/%E6%AD%A3%E5%BD%93%E9%98%B2%E5%8D%AB4?fromModule=lemma_search-box">
+							<div class="imgst">
+								<img src="../images/0new-3.jpg" alt="">
+							</div>
+							<div class="bt">正当防卫4</div>
+							<p>《正当防卫4》（Just Cause 4）是第三人称射击游戏《正当防卫》系列正统续作，由Avalanche Studios开发、Square Enix发行。
+								游戏于2018年12月5日发行，游戏平台为PC、PS4、XboxOne。
+								《正当防卫4》杀人特工里科·罗德里格兹来到了索利斯。这里位于南美洲，面积广阔、冲突频发、压迫不断，气候条件极其恶劣。
+								穿上飞翼、带上完全由玩家定制的抓钩，准备叱咤风云。</p>
+							<div class="item">
+								<span class="time"><i></i>2023年03月01日 00:00:00</span>
+							</div>
+						</a>
+					</li>
+
+					<li>
+						<a href="https://baike.baidu.com/item/red%20dead%20redemption%202/23651908">
+							<div class="imgst">
+								<img src="../images/0new-4.jpg" alt="">
+							</div>
+							<div class="bt">荒野大镖客：救赎2</div>
+							<p>《荒野大镖客：救赎2》（Red Dead Redemption）是由Rockstar Games开发并发行的第三人称射击游戏，
+								于2018年10月26日在PS4、Xbox One平台发售，2019年11月5日在Microsoft Windows平台发布，11月19日发布Stadia版本。
+								《荒野大镖客：救赎2》游戏里，在和执法人员、不法之徒和凶猛的野生动物不停争斗，试图在美国边境生存下去的过程中寻找属于自己的方向。
+								搭建一个营地独来独往或作为团队的一员来尽情体验，从北方皑皑的雪山到南方泥泞的沼泽，从偏远的前哨到繁忙的农场和嘈杂的小镇带给玩家的一切。</p>
+							<div class="item">
+								<span class="time"><i></i>2023年04月01日 00:00:00</span>
+							</div>
+						</a>
+					</li>
+
+					<li>
+						<a
+							href="https://baike.sogou.com/v176216950.htm?fromTitle=%E6%BC%AB%E5%A8%81%E8%9C%98%E8%9B%9B%E4%BE%A0">
+							<div class="imgst">
+								<img src="../images/0new-5.jpg" alt="">
+							</div>
+							<div class="bt">漫威蜘蛛侠</div>
+							<p>《漫威蜘蛛侠》（Marvels Spider-man）是由Insomniac Game制作、索尼发行的一款动作冒险游戏。于2018年9月7日正式发售在PS4平台。
+								《漫威蜘蛛侠》以曼哈顿为蓝本制作开放世界，玩家将在其中扮演超级英雄蜘蛛侠，穿梭在楼宇间与各种各样的罪犯对抗。
+								本作中除了中国反派“底片先生”、夜魔侠常客“金并”、蜘蛛侠反派“惊悚”，还出现了蜘蛛侠经典反派“绿魔”，他的儿子哈利奥斯本同样将登场。
+								PlayStation Awards 2019颁奖典礼中，《漫威蜘蛛侠》获得“PlayStation 25周年玩家最爱大奖”以及“白金奖”。</p>
+							<div class="item">
+								<span class="time"><i></i>2023年05月01日 00:00:00</span>
+							</div>
+						</a>
+					</li>
+
+					<li>
+						<a
+							href="https://baike.baidu.com/item/%E6%B6%88%E9%80%9D%E7%9A%84%E5%85%89%E8%8A%92?fromModule=lemma_search-box">
+							<div class="imgst">
+								<img src="../images/0new-6.jpg" alt="">
+							</div>
+							<div class="bt">消逝的光芒</div>
+							<p>《消逝的光芒》是由Techland开发的一款动作类游戏，于2015年1月27日发行。
+								《消逝的光芒：白金版》于21年10月份登陆任天堂Nintendo Switch平台。 [12]
+								游戏设定在一个巨大的开放世界，这个世界有着不祥的昼夜周期变化。在游戏中的白天，玩家将穿过一个被病毒爆发摧残过的广阔城市环境，
+								满世界寻觅物资并自制武器以抵御日益庞大的被感染人群。到了晚上，猎人变成猎物，被感染者变得更活跃，更危险。当然，还有那种最可怕的、
+								只出现在日落后的天敌，玩家必须使用自己的一切力量活下去，直到次日清晨第一缕阳光到来。</p>
+							<div class="item">
+								<span class="time"><i></i>2022年06月01日 00:00:00</span>
+							</div>
+						</a>
+					</li>
+
+					<li>
+						<a
+							href="https://baike.baidu.com/item/%E6%9E%81%E9%99%90%E7%AB%9E%E9%80%9F%EF%BC%9A%E5%9C%B0%E5%B9%B3%E7%BA%BF5?fromtitle=%E5%9C%B0%E5%B9%B3%E7%BA%BF5&fromid=57279411&fromModule=lemma_search-box">
+							<div class="imgst">
+								<img src="../images/0new-7.jpg" alt="">
+							</div>
+							<div class="bt">极限竞速：地平线5</div>
+							<p>《极限竞速：地平线5》是由Playground Games与Turn 10 Studio联合开发的赛车竞速游戏，于2021年11月9日于Microsoft
+								Store与Steam平台全版本正式发售，
+								为《极限竞速：地平线》系列第五作。本作支持支持简体中文界面与汉语普通话配音 。游戏首个DLC“风火轮”于北京时间2022年7月20日实装。2022年10月，
+								《极限竞速：地平线5》以《极限竞速：地平线》系列最新作开展系列游戏十周年庆典，且追加前作背景音乐。 [42] 第二个DLC“拉力赛冒险”于2023年3月30日上线。
+								游戏使用墨西哥地图来扩展精彩纷呈的嘉年华，从而获得更多的竞赛和活动。 玩家还会认识新的车手。与他们一同驰骋于充满生机的墨西哥异域大陆，
+								帮助他们书写自己的故事，发现其中隐藏的秘密。</p>
+							<div class="item">
+								<span class="time"><i></i>2022年07月01日 00:00:00</span>
+							</div>
+						</a>
+					</li>
+
+					<li>
+						<a
+							href="https://baike.baidu.com/item/%E9%BE%99%E7%8F%A0%E8%B6%85%E5%AE%87%E5%AE%992/20465189?fromModule=lemma_search-box">
+							<div class="imgst">
+								<img src="../images/0new-8.jpg" alt="">
+							</div>
+							<div class="bt">龙珠超宇宙2</div>
+							<p>《龙珠超宇宙2》是日本国民漫画《龙珠》及各种其官方动漫续作的衍生游戏的同名周边漫画，
+								于2016年10月1日其制作及发行方南梦宫万代（Namco Bandai）宣布漫画化。
+								由鸟山明构思故事大体概况，后交由丰太郎（Toyble）绘制。
+							</p>
+							<div class="item">
+								<span class="time"><i></i>2022年08月01日 00:00:00</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="pagewrap">
+				<ul class="pagination">
+					<li class="first disabled"><span>首页</span></li>
+					<li class="prev disabled"><span>«</span></li>
+					<li class="active"><a href="./community.html#" data-page="0">1</a></li>
+					<li><a href="./community.html" data-page="1">2</a></li>
+					<li><a href="./community.html#" data-page="2">3</a></li>
+					<li><a href="./community.html#" data-page="3">4</a></li>
+					<li><a href="./community.html#" data-page="4">5</a></li>
+					<li><a href="./community.html#" data-page="5">6</a></li>
+					<li><a href="./community.html#" data-page="6">7</a></li>
+					<li><a href="./community.html#" data-page="7">8</a></li>
+					<li class="next"><a href="./community.html#" data-page="1">»</a></li>
+					<li class="last"><a href="./community.html#" data-page="293">末页</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- ························································页脚部分························································ -->
+	<div class="footer-bottom">
+		<div class="footer-bottom-mid">
+			<p><a href="#">关于VIM网站</a>|<a href="#">客服中心</a>|<a href="#">售后服务</a>|<a href="#">相关政策</a>|<a
+					href="#">意见反馈</a>|<a href="#">免责声明</a>|<a href="#">家长监护</a>|<a href="#">青少年模式</a></p>
+			<p> <a href="#">
+					<span style="color:#939393;">X公网安备 XXXXXXXXXXXXXXX号</span>
+				</a>VIM网站不良信息举报地址：xxxxxxxxx@foxmail.com</p>
+			<p>Copyright © 2023 - 3023.Personal vimmin All Right Reserved</p>
+		</div>
+	</div>
+</body>
+
+</html>
